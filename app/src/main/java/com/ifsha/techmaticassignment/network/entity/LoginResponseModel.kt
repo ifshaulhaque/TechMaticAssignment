@@ -1,0 +1,57 @@
+package com.ifsha.techmaticassignment.network.entity
+
+import com.google.gson.annotations.SerializedName
+
+
+data class LoginResponseModel (
+
+  @SerializedName("AppId"                      ) var AppId                      : Int?              = null,
+  @SerializedName("UserId"                     ) var UserId                     : Int,
+  @SerializedName("DeviceType"                 ) var DeviceType                 : String?           = null,
+  @SerializedName("DeviceId"                   ) var DeviceId                   : String?           = null,
+  @SerializedName("SourceId"                   ) var SourceId                   : String?           = null,
+  @SerializedName("StoreId"                    ) var StoreId                    : Int?              = null,
+  @SerializedName("SessionId"                  ) var SessionId                  : String,
+  @SerializedName("IsAccess"                   ) var IsAccess                   : Boolean?          = null,
+  @SerializedName("IsNewUser"                  ) var IsNewUser                  : Boolean?          = null,
+  @SerializedName("IsNewToStore"               ) var IsNewToStore               : Boolean?          = null,
+  @SerializedName("IsSignUpMailBannedStore"    ) var IsSignUpMailBannedStore    : Boolean?          = null,
+  @SerializedName("IsSwitchStore"              ) var IsSwitchStore              : Boolean?          = null,
+  @SerializedName("TimeZone"                   ) var TimeZone                   : String?           = null,
+  @SerializedName("IsFromSire"                 ) var IsFromSire                 : Boolean?          = null,
+  @SerializedName("IsFrequentShopper"          ) var IsFrequentShopper          : Boolean?          = null,
+  @SerializedName("CustomerLoyaltyCardNumber"  ) var CustomerLoyaltyCardNumber  : String?           = null,
+  @SerializedName("LoyaltyCardId"              ) var LoyaltyCardId              : Int?              = null,
+  @SerializedName("ContactListId"              ) var ContactListId              : Int?              = null,
+  @SerializedName("IsFromSipn"                 ) var IsFromSipn                 : Boolean?          = null,
+  @SerializedName("IsCaptcha"                  ) var IsCaptcha                  : Boolean?          = null,
+  @SerializedName("NewErrorCode"               ) var NewErrorCode               : Int?              = null,
+  @SerializedName("NewErrorMessage"            ) var NewErrorMessage            : String?           = null,
+  @SerializedName("IsABCStore"                 ) var IsABCStore                 : Boolean?          = null,
+  @SerializedName("ABCCustomerId"              ) var ABCCustomerId              : String?           = null,
+  @SerializedName("ABCLoyaltyCardNumber"       ) var ABCLoyaltyCardNumber       : String?           = null,
+  @SerializedName("ABCLoyaltyCardBarcodeImage" ) var ABCLoyaltyCardBarcodeImage : String?           = null,
+  @SerializedName("IsDummyEmail"               ) var IsDummyEmail               : Boolean?          = null,
+  @SerializedName("IsStoreSignUpCaptcha"       ) var IsStoreSignUpCaptcha       : Boolean?          = null,
+  @SerializedName("CartId"                     ) var CartId                     : Int?              = null,
+  @SerializedName("CartItemCount"              ) var CartItemCount              : Int?              = null,
+  @SerializedName("CustomerFirstName"          ) var CustomerFirstName          : String?           = null,
+  @SerializedName("CustomerLastName"           ) var CustomerLastName           : String?           = null,
+  @SerializedName("CustomerPhoneNumber"        ) var CustomerPhoneNumber        : String?           = null,
+  @SerializedName("CustomerEmail"              ) var CustomerEmail              : String?           = null,
+  @SerializedName("CustomerImage"              ) var CustomerImage              : String?           = null,
+  @SerializedName("CartTransferCartId"         ) var CartTransferCartId         : Int?              = null,
+  @SerializedName("IsAllowCartTransfer"        ) var IsAllowCartTransfer        : Boolean?          = null,
+  @SerializedName("CartTransferProductslist"   ) var CartTransferProductslist   : ArrayList<String> = arrayListOf(),
+  @SerializedName("SessionCustomerId"          ) var SessionCustomerId          : Int?              = null,
+  @SerializedName("NotificationCount"          ) var NotificationCount          : Int?              = null,
+  @SerializedName("IsGooglebot"                ) var IsGooglebot                : Boolean?          = null,
+  @SerializedName("IsCartTransferAvailable"    ) var IsCartTransferAvailable    : Boolean?          = null,
+  @SerializedName("IsStoreUpdate"              ) var IsStoreUpdate              : Boolean?          = null,
+  @SerializedName("SuccessMessage"             ) var SuccessMessage             : String?           = null,
+  @SerializedName("ErrorDetail"                ) var ErrorDetail                : String?           = null,
+  @SerializedName("ErrorMessage"               ) var ErrorMessage               : String?           = null,
+  @SerializedName("MessageType"                ) var MessageType                : String?           = null,
+  @SerializedName("MessageTitle"               ) var MessageTitle               : String?           = null
+
+)
