@@ -14,11 +14,13 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
+import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.NavController
 
 @Composable
 fun LoginScreen(
-    navController: NavController
+    navController: NavController,
+    loginScreenViewModel: LoginScreenViewModel? = hiltViewModel()
 ) {
     var emailId by remember {
         mutableStateOf("")
@@ -56,7 +58,11 @@ fun LoginScreen(
 
         Button(
             onClick = {
-
+                loginScreenViewModel?.login(
+                    navController = navController,
+                    emailId = emailId,
+                    password = password
+                )
             },
             modifier = Modifier.fillMaxWidth()
         ) {

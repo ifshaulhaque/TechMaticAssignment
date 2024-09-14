@@ -1,6 +1,9 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.jetbrains.kotlin.android)
+    id("kotlin-kapt")
+    id("com.google.dagger.hilt.android")
+    id ("dagger.hilt.android.plugin")
 }
 
 android {
@@ -70,4 +73,15 @@ dependencies {
     val nav_version = "2.8.0"
 
     implementation("androidx.navigation:navigation-compose:$nav_version")
+
+    implementation("com.google.dagger:hilt-android:2.51.1")
+    kapt("com.google.dagger:hilt-android-compiler:2.51.1")
+
+    implementation ("com.google.dagger:hilt-android:2.42")
+    kapt ("com.google.dagger:hilt-android-compiler:2.42")
+    implementation ("androidx.hilt:hilt-navigation-compose:1.0.0")
+}
+
+kapt {
+    correctErrorTypes = true
 }
