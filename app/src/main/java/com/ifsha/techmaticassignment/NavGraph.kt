@@ -5,6 +5,7 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import com.ifsha.techmaticassignment.screens.login.LoginScreen
+import com.ifsha.techmaticassignment.screens.promotion.PromotionScreen
 
 @Composable
 fun NavGraph(
@@ -20,7 +21,7 @@ fun NavGraph(
         composable(
             route = RoutePath.PROMOTION_SCREEN_PATH
         ) {
-
+            PromotionScreen(navController = navHostController)
         }
     }
 }

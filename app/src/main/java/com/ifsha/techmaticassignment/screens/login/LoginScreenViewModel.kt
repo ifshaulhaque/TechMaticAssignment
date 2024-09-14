@@ -28,8 +28,8 @@ class LoginScreenViewModel @Inject constructor(
     ) {
         repository.login(
             LoginRequestModel(
-                EmailId = emailId,
-                Password = password
+                EmailId = emailId.trim(),
+                Password = password.trim()
             ),
             object: Callback<LoginResponseModel> {
                 override fun onResponse(
